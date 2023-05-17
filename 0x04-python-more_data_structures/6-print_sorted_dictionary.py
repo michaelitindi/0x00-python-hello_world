@@ -2,5 +2,5 @@
 def print_sorted_dictionary(a_dictionary):
     ascending = sorted(a_dictionary.keys())
     for i in ascending:
-        value = a_dictionary[key]
-        print(key, value)
+        value = a_dictionary[i]
+        print(i, value)
