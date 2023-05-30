@@ -20,10 +20,11 @@ class Square:
 
 
     def area(self):
-        """ area of a square
+        """
+        Returns the current square area.
 
         Returns:
-              area of the square
+            area of the square
 
         """
 
