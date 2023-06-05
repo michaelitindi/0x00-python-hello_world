@@ -5,7 +5,6 @@
 class Rectangle:
     """ Class rectangle with height and width attribute """
 
-
     def __init__(self, width=0, height=0):
         """Initialize rectangle with width and height
 
@@ -22,7 +21,6 @@ class Rectangle:
         """ width getter """
         return self.__width
 
-
     @width.setter
     def width(self, value):
         """ width setter """
@@ -31,7 +29,6 @@ class Rectangle:
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
-
 
     @property
     def height(self):
