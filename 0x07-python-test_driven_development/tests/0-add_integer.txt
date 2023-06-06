@@ -1,0 +1,78 @@
+The ``0-add_integer`` module
+============================
+
+Using ``add_integer``
+---------------------
+
+Importing function from the module:
+	  >>> add_integer = __import__("0-add_integer").add_integer
+
+Checking for module docstring:
+	 >>> dc = __import__("0-add_integer").__doc__
+	 >>> len(dc) > 1
+	 True
+
+Checking if there is function docstring:
+	 >>> fc = __import__("0-add_integer").add_integer.__doc__
+         >>> len(fc) > 1
+         True
+
+Normal addition:
+       >>> add_integer(5, 5)
+       10
+
+Negative number a:
+	 >>> add_integer(-3, 7)
+	 4
+
+Negative number b:
+	 >>> add_integer(4, -2)
+	 2
+
+
+Both negative:
+     >>> add_integer(-2, -2)
+     -4
+
+Float a:
+      >>> add_integer(2.6, 3)
+      5
+
+Float b:
+      >>> add_integer(4, 5.9)
+      9
+
+Both float:
+     >>> add_integer(2.8, 2.7)
+     4
+
+a as a string:
+	 >>> add_integer("3", 3)
+	 Traceback (most recent call last):
+         ...
+	 TypeError: a must be an integer
+
+b as a string:
+         >>> add_integer(2, "4")
+         Traceback (most recent call last):
+         ...
+         TypeError: b must be an integer
+
+both as a string:
+         >>> add_integer("2", "3")
+         Traceback (most recent call last):
+         ...
+         TypeError: a must be an integer
+
+
+no argument:
+   >>> add_integer()
+   Traceback (most recent call last):
+   ...
+   TypeError: add_integer() missing integers
+
+only one argument:
+     >>> add_integer(3)
+     Traceback (most recent call last):
+     ...
+     TypeError: add_integer() missing 1 integer
