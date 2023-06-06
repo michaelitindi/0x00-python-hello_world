@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+""" Prints a text with 2 new lines after ., ? and :"""
+
+
+def text_indentation(text):
+    """ prints text with 2 new lines """
+    if not isinstance(text, str):
+        raise TypeError("text must be a string")
+    chars = ['.', '?', ':']
+    result = ''.join([char + '\n\n' if char in chars else char for char in text])
+    print(result)
