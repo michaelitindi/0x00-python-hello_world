@@ -16,5 +16,6 @@ try:
 except FileNotFoundError:
     data = []
 
-data.extend(sys.argv[1:])
-save_to_json_file(data, filename)
+new_items = sys.argv[1:]
+updated = data + new_items
+save_to_json_file(updated, filename)
