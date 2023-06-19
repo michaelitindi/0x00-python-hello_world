@@ -27,6 +27,7 @@ class Square(Rectangle):
         self.height = value
 
     def update(self, *args, **kwargs):
+        """ assigns attributes"""
         if args:
             att = ["id", "size", "x", "y"]
             for i, arg in enumerate(args[:len(att)]):
@@ -36,6 +37,7 @@ class Square(Rectangle):
                 setattr(self, key, value)
 
     def to_dictionary(self):
+        """ dict representation"""
         return {
             "id": self.id,
             "size": self.size,
@@ -45,4 +47,5 @@ class Square(Rectangle):
 
     def __str__(self):
         """ str rep"""
-        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.width)
+        return "[Square] ({}) {}/{} - {}".format(self.id, self.x,
+                                                 self.y, self.width)
