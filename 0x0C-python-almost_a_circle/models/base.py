@@ -45,13 +45,13 @@ class Base:
     def create(cls, **dictionary):
         """ returns instance with all attributes"""
         if cls.__name__ == "Rectangle":
-            dm = cls(1, 1)
+            nas = cls(1, 1)
         elif cls.__name__ == "Square":
-            dm = cls(1)
+            nas = cls(1)
         else:
-            dm = None
-        dm.update(**dictionary)
-        return dm
+            nas = None
+        nas.update(**dictionary)
+        return nas
 
     @classmethod
     def load_from_file(cls):
