@@ -10,7 +10,6 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """initialization of rectangle """
-
         super().__init__(id)
         self.width = width
         self.height = height
@@ -75,14 +74,14 @@ class Rectangle(Base):
 
     def area(self):
         """ area of rectangle"""
-        return self.width * self.height
+        return self.__width * self.__height
 
     def display(self):
         """ prints rectangle with the character #"""
         for i in range(self.y):
             print()
         for i in range(self.height):
-            print(" " * self.x + "#" * self.width, end="")
+            print(" " * self.x + "#" * self.width)
 
     def __str__(self):
         """ overriding the __str__ method """
