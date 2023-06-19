@@ -50,7 +50,6 @@ class Base:
             dm = cls(1)
         else:
             dm = None
-
         dm.update(**dictionary)
         return dm
 
