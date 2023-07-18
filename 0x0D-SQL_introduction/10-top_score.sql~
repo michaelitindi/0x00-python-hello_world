@@ -1,0 +1,2 @@
+-- lists records of second table
+SELECT * FROM second_table ORDER BY SCORE DESC;
