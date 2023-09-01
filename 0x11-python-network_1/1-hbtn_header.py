@@ -7,4 +7,4 @@ url = sys.argv[1]
 
 with urllib.request.urlopen(url) as response:
     headers = response.info()
-    print(headers["X-Request-Id"])
+    print('{}'.format(resp.info().get('X-Request-id')))
