@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """displays the value of the X-Request-Id"""
-
 import urllib.request
 import sys
 
